@@ -8,6 +8,16 @@ Note: Only tested on FortiGate VM appliance.
 
 The "license_old.py" script is used for older versions. eg: FortiGate VM64 v7.4.1
 
+修改license_old.py脚本，SERIALNO以FGVMPG开头，其他参照以下配置就行了
+```
+                            LicenseDataBlock("SERIALNO", "FGVMPGHJKMMXXCA8"),
+                            LicenseDataBlock("CREATEDATE", "Mon Jan 15 12:00:00 2024"),
+                            LicenseDataBlock("USGFACTORY", "32"),
+                            LicenseDataBlock("LENCFACTORY", "0"),
+                            LicenseDataBlock("CARRIERFACTORY", "32"),
+                            LicenseDataBlock("EXPIRY", "3153600000"),
+```
+
 The "license_new.py" script is used for newer versions. eg: FortiGate VM64 v7.4.3
 
 ### Base license
